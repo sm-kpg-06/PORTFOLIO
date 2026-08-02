@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Karpagam | Data Science & Full-Stack AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of S. Karpagam - Computer Science (Data Science) student at VIT Chennai. Experienced in LLM integration, data engineering, and full-stack development.">
+    <meta name="keywords" content="Karpagam, Portfolio, Data Science, AI Engineer, Full Stack, Python, FastAPI, React, LLaMA, VIT Chennai">
+    <meta name="author" content="S. Karpagam">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="S. Karpagam | Data Science & Full-Stack AI Engineer Portfolio">
+    <meta property="og:description" content="Computer Science student passionate about data-driven solutions, full-stack AI, and interactive analytics dashboards. Check out my projects!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert">Email copied to clipboard!</div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-text">S.<span class="gradient-text">Karpagam</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="hamburger" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#education" class="mobile-link">Education</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="section-container hero-container">
+            <div class="hero-content">
+                <span class="hero-tagline animate-fade">Welcome to my space</span>
+                <h1 class="hero-title animate-slide">Hi, I'm <span class="gradient-text">S. Karpagam</span></h1>
+                <h2 class="hero-subtitle animate-slide">I build <span id="typewriter" class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc animate-fade">
+                    A Computer Science student specializing in Data Science at VIT Chennai. Passionate about engineering end-to-end data analytics platforms, LLM integrations, and robust full-stack applications.
+                </p>
+                <div class="hero-actions animate-fade">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Work</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+                <div class="social-links animate-fade">
+                    <a href="https://github.com/sm-kpg-06" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/karpagam-s-9082b637a" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <button class="social-link-item copy-email-btn" aria-label="Copy Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual animate-scale">
+                <div class="visual-card glass-panel">
+                    <div class="card-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                        <span class="card-title">profile.py</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-method">__init__</span>(<span class="code-self">self</span>):
+        <span class="code-self">self</span>.name = <span class="code-string">"S. Karpagam"</span>
+        <span class="code-self">self</span>.role = <span class="code-string">"Data Science & AI Developer"</span>
+        <span class="code-self">self</span>.focus = [<span class="code-string">"LLMs"</span>, <span class="code-string">"Data Pipeline"</span>, <span class="code-string">"FullStack"</span>]
+        <span class="code-self">self</span>.stats = {
+            <span class="code-string">"CGPA"</span>: <span class="code-number">9.23</span>,
+            <span class="code-string">"Location"</span>: <span class="code-string">"Chennai, India"</span>
+        }
+        
+    <span class="code-keyword">def</span> <span class="code-method">get_motivation</span>(<span class="code-self">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Solving real-world problems with data."</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll Down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section scroll-reveal" id="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-info glass-panel">
+                    <h3>Engineering Intelligence</h3>
+                    <p>
+                        I'm a Computer Science (Data Science) undergraduate at <strong>Vellore Institute of Technology, Chennai</strong>. I focus on bridging the gap between raw data analytics and user-facing intelligence. By combining advanced statistical modelling, data pipeline engineering, and interactive web application frontends, I build systems that solve real-world problems.
+                    </p>
+                    <p>
+                        Whether designing Cost-of-Living indicators, NLP study schedulers, or robust database clinical platforms, I maintain a strong commitment to clean code, modular architecture, and modern UX design principles.
+                    </p>
+                    <div class="info-badges">
+                        <div class="info-badge">
+                            <span class="badge-num">9.23</span>
+                            <span class="badge-lbl">B.Tech CGPA</span>
+                        </div>
+                        <div class="info-badge">
+                            <span class="badge-num">3+</span>
+                            <span class="badge-lbl">Full-Stack Projects</span>
+                        </div>
+                        <div class="info-badge">
+                            <span class="badge-num">2028</span>
+                            <span class="badge-lbl">Graduating Year</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Spoken Languages -->
+                    <div class="spoken-languages">
+                        <h4>Languages Known</h4>
+                        <div class="lang-tags">
+                            <span class="lang-tag">Tamil <span class="lang-detail">(Native)</span></span>
+                            <span class="lang-tag">English <span class="lang-detail">(Professional)</span></span>
+                            <span class="lang-tag">Hindi <span class="lang-detail">(Elementary)</span></span>
+                            <span class="lang-tag">French <span class="lang-detail">(Beginner)</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-quote glass-panel">
+                    <div class="quote-icon">“</div>
+                    <p class="quote-text">
+                        Passion drives my learning, and data guides my engineering. I believe the future belongs to intelligent, adaptive software that simplifies complex workflows.
+                    </p>
+                    <div class="quote-author">- S. Karpagam</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section scroll-reveal" id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Technical Expertise</h2>
+            
+            <div class="skills-grid" id="skills-display">
+                <!-- Card 1: Languages -->
+                <div class="skill-card glass-panel" data-cats="programming">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category-title">Languages</h3>
+                    </div>
+                    <div class="skill-tags-cloud">
+                        <span class="skill-tag-pill">Python</span>
+                        <span class="skill-tag-pill">C++</span>
+                        <span class="skill-tag-pill">Java</span>
+                        <span class="skill-tag-pill">JavaScript</span>
+                        <span class="skill-tag-pill">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Data Science & AI -->
+                <div class="skill-card glass-panel" data-cats="datascience">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category-title">Data Science & AI</h3>
+                    </div>
+                    <div class="skill-tags-cloud">
+                        <span class="skill-tag-pill">LLaMA 3.3 & Groq API</span>
+                        <span class="skill-tag-pill">NLP & Tesseract OCR</span>
+                        <span class="skill-tag-pill">Pandas & NumPy & Scikit-learn</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Web Development -->
+                <div class="skill-card glass-panel" data-cats="web">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category-title">Web Development</h3>
+                    </div>
+                    <div class="skill-tags-cloud">
+                        <span class="skill-tag-pill">React.js & Vite</span>
+                        <span class="skill-tag-pill">FastAPI</span>
+                        <span class="skill-tag-pill">HTML5 & CSS3 & JS</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Tools & Core CS -->
+                <div class="skill-card glass-panel" data-cats="tools">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category-title">Tools & Core CS</h3>
+                    </div>
+                    <div class="skill-tags-cloud">
+                        <span class="skill-tag-pill">Git & Version Control</span>
+                        <span class="skill-tag-pill">SQLite & MySQL</span>
+                        <span class="skill-tag-pill">DSA, OOP, OS & DBMS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section scroll-reveal" id="projects">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1: AI Study Planner -->
+                <article class="project-card glass-panel">
+                    <div class="project-img-wrapper">
+                        <div class="project-glow purple-glow"></div>
+                        <div class="project-num">01</div>
+                        <div class="project-category">Full-Stack AI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Study Planner</h3>
+                        <p class="project-sub">Adaptive Study Planner & Intelligent Scheduler</p>
+                        <p class="project-desc">
+                            An intelligent student companion that extracts syllabus content from uploaded documents using Tesseract OCR, applies NLP for classification, and designs personalized, adaptive study programs. Highlights metrics dashboard, Pomodoro tracker, and JWT verification.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">SQLite3</span>
+                            <span class="tech-tag">Tesseract OCR</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ai-planner-ilvk.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-btn">
+                                <span>Live Demo</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/sm-kpg-06/AI-STUDY_PLANNER-FINAL" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-btn">
+                                <span>Code</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: LifeCostIQ -->
+                <article class="project-card glass-panel">
+                    <div class="project-img-wrapper">
+                        <div class="project-glow"></div>
+                        <div class="project-num">02</div>
+                        <div class="project-category">Data Science / FinTech</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">LifeCostIQ</h3>
+                        <p class="project-sub">AI-Powered Financial Intelligence Platform</p>
+                        <p class="project-desc">
+                            An end-to-end financial analytics platform that scrapes and processes 40+ indicators across 294 Indian cities. Computes Cost-of-Living index, Financial Health Score, and FIRE forecasting using weighted composite scoring. Features RAG-like Groq API (LLaMA 3.3) and interactive Chart.js dashboards.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">BeautifulSoup4</span>
+                            <span class="tech-tag">Groq API</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://life-cost-iq.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-btn">
+                                <span>Live Demo</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/sm-kpg-06/LIFE-COST-INDEX-FINAL" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-btn">
+                                <span>Code</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Rural Healthcare System -->
+                <article class="project-card glass-panel">
+                    <div class="project-img-wrapper">
+                        <div class="project-glow green-glow"></div>
+                        <div class="project-num">03</div>
+                        <div class="project-category">Web Systems & DB</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Rural Clinic DB Management</h3>
+                        <p class="project-sub">Database & Management System</p>
+                        <p class="project-desc">
+                            A highly structured relational clinic information manager. Handles patient registrations, doctor assignments, medical visit logs, laboratory testing reports, and automated billing modules. Built with robust session validations and optimized SQL statements.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">Vanilla CSS3</span>
+                            <span class="tech-tag">Session Auth</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://rural-healthcare-database-clinic.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-btn">
+                                <span>Live Demo</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/sm-kpg-06/Rural-Healthcare-Database-Clinic-Management-System" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-btn">
+                                <span>Code</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Achievements Section -->
+    <section class="education-section scroll-reveal" id="education">
+        <div class="section-container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-layout">
+                <!-- Education Block (Full Width) -->
+                <div class="education-block-full">
+                    <h3 class="subsection-title">Education</h3>
+                    <div class="timeline horizontal-timeline">
+                        <div class="timeline-item glass-panel">
+                            <div class="timeline-dot"></div>
+                            <h4 class="timeline-title">B.Tech Computer Science & Engineering (Data Science)</h4>
+                            <span class="timeline-date">2024 - 2028</span>
+                            <p class="timeline-org">Vellore Institute Of Technology, Chennai</p>
+                            <p class="timeline-details">Current Cumulative GPA: <strong>9.23</strong>.</p>
+                        </div>
+                        <div class="timeline-item glass-panel">
+                            <div class="timeline-dot"></div>
+                            <h4 class="timeline-title">Class 12th CBSE (Biology Stream)</h4>
+                            <span class="timeline-date">Graduated 2024</span>
+                            <p class="timeline-org">PSBB Senior Secondary School, K.K.Nagar, Chennai</p>
+                            <p class="timeline-details">Completed with a final percentage of <strong>89.4%</strong>.</p>
+                        </div>
+                        <div class="timeline-item glass-panel">
+                            <div class="timeline-dot"></div>
+                            <h4 class="timeline-title">Class 10th CBSE</h4>
+                            <span class="timeline-date">Graduated 2022</span>
+                            <p class="timeline-org">PSBB Senior Secondary School, K.K.Nagar, Chennai</p>
+                            <p class="timeline-details">Completed with a final percentage of <strong>99.4%</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Certifications Row (Side-by-Side) -->
+                <div class="ach-cert-layout">
+                    <!-- Column 1: Achievements -->
+                    <div class="ach-column">
+                        <h3 class="subsection-title">Achievements</h3>
+                        <div class="achievements-list">
+                            <!-- Shaastra Card -->
+                            <div class="achievement-card glass-panel flex-column">
+                                <div class="ach-title-bar">
+                                    <div class="ach-icon-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="8" r="7"></circle>
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                        </svg>
+                                    </div>
+                                    <h4 class="ach-card-title">Finalist in 5 contests under Shaastra 2026 - IIT Madras</h4>
+                                </div>
+                                <p class="ach-card-desc">Finalist and ranked performer in multiple programming, algorithmic, and quantitative contests.</p>
+                                <div class="cert-sub-list" style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--card-border); padding-top: 16px;">
+                                    <div class="cert-sub-item" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; gap: 16px;">
+                                        <span class="cert-contest-title" style="color: var(--text-secondary); font-weight: 500;">CP Potpourri (18th Position)</span>
+                                        <a href="certificates/shaastra_cp_potpurri.pdf" target="_blank" rel="noopener noreferrer" class="cert-sub-link" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600;">View Certificate</a>
+                                    </div>
+                                    <div class="cert-sub-item" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; gap: 16px;">
+                                        <span class="cert-contest-title" style="color: var(--text-secondary); font-weight: 500;">Reverse Coding X (18th Position)</span>
+                                        <a href="certificates/shaastra_reverse_coding.pdf" target="_blank" rel="noopener noreferrer" class="cert-sub-link" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600;">View Certificate</a>
+                                    </div>
+                                    <div class="cert-sub-item" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; gap: 16px;">
+                                        <span class="cert-contest-title" style="color: var(--text-secondary); font-weight: 500;">Programming Contest (23rd Position)</span>
+                                        <a href="certificates/shaastra_programming_contest.pdf" target="_blank" rel="noopener noreferrer" class="cert-sub-link" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600;">View Certificate</a>
+                                    </div>
+                                    <div class="cert-sub-item" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; gap: 16px;">
+                                        <span class="cert-contest-title" style="color: var(--text-secondary); font-weight: 500;">Quantathon (37th Position)</span>
+                                        <a href="certificates/shaastra_quantathon.pdf" target="_blank" rel="noopener noreferrer" class="cert-sub-link" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600;">View Certificate</a>
+                                    </div>
+                                    <div class="cert-sub-item" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; gap: 16px;">
+                                        <span class="cert-contest-title" style="color: var(--text-secondary); font-weight: 500;">E-Contest (Finalist)</span>
+                                        <a href="certificates/shaastra_e_contest.pdf" target="_blank" rel="noopener noreferrer" class="cert-sub-link" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600;">View Certificate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Certifications -->
+                    <div class="cert-column">
+                        <h3 class="subsection-title">Certifications</h3>
+                        <div class="achievements-list">
+                            <!-- IBM Card -->
+                            <div class="achievement-card glass-panel flex-column">
+                                <div class="ach-title-bar">
+                                    <div class="ach-icon-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                    <h4 class="ach-card-title">IBM - Building agents with agentic ai</h4>
+                                </div>
+                                <p class="ach-card-desc">Certified in constructing intelligent agents using specialized AI models and decision systems.</p>
+                                <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/a911929f9fb144f98429c11c39c55458" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                    <span>Verify Certificate</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon-svg">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section scroll-reveal" id="contact">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card-container" style="display: flex; justify-content: center;">
+                <div class="contact-info glass-panel" style="max-width: 600px; width: 100%;">
+                    <h3>Let's collaborate!</h3>
+                    <p class="contact-subtitle">
+                        I am open to discussions regarding data engineering opportunities, software development internships, AI projects, or collaborative research. Click to copy my email or reach out directly.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method copy-email-btn">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <span class="method-title">Email Me (Click to Copy)</span>
+                                <span class="method-value">smkarpagam2025@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <span class="method-title">Call / Text</span>
+                                <span class="method-value">+91 6385671178</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <span class="method-title">Location</span>
+                                <span class="method-value">Chennai, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 S. Karpagam. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="https://github.com/sm-kpg-06" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/karpagam-s-9082b637a" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

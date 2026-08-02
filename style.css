@@ -79,6 +79,7 @@ input, textarea, button {
    Utilities
    ========================================== */
 .section-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 24px;
@@ -347,6 +348,7 @@ input, textarea, button {
 }
 
 .hero-content {
+    width: 100%;
     max-width: 650px;
 }
 
@@ -363,9 +365,9 @@ input, textarea, button {
 
 .hero-title {
     font-size: 3.5rem;
-    line-height: 1.15;
+    font-weight: 800;
+    line-height: 1.2;
     margin-bottom: 16px;
-    letter-spacing: -1px;
 }
 
 .hero-subtitle {
@@ -391,10 +393,11 @@ input, textarea, button {
 }
 
 .hero-desc {
+    width: 100%;
+    max-width: 540px;
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 40px;
-    max-width: 540px;
 }
 
 .hero-actions {
@@ -530,6 +533,14 @@ input, textarea, button {
     font-size: 0.9rem;
     overflow-x: auto;
     color: #f1f5f9;
+    max-width: 100%;
+    text-align: left;
+}
+
+.card-body pre {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .code-keyword { color: #ff79c6; }
@@ -1422,6 +1433,25 @@ input, textarea, button {
 
     .hero-content {
         margin: 0 auto;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        max-width: 100%;
+        margin: 0 auto;
+        min-width: 0;
+    }
+
+    .visual-card {
+        max-width: 100%;
+        min-width: 0;
     }
 
     .hero-actions {
@@ -1493,6 +1523,11 @@ input, textarea, button {
     .info-badges {
         grid-template-columns: 1fr;
         gap: 12px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .footer-container {

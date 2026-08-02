@@ -697,12 +697,12 @@ input, textarea, button {
 }
 
 .quote-icon.start-quote {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .quote-icon.end-quote {
-    margin-top: 8px;
-    margin-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 
 .quote-text {

@@ -917,6 +917,10 @@ input, textarea, button {
     background: var(--accent-purple);
 }
 
+.project-glow.blue-glow {
+    background: var(--accent-blue);
+}
+
 .project-glow.green-glow {
     background: #22c55e;
 }
@@ -965,6 +969,36 @@ input, textarea, button {
     color: var(--text-secondary);
     margin-bottom: 24px;
     font-size: 1rem;
+}
+
+.project-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.project-bullets li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.project-bullets li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-cyan);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-bullets strong {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 .project-tech-tags {
@@ -1524,6 +1558,10 @@ input, textarea, button {
 
     .project-card {
         grid-template-columns: 1fr;
+    }
+
+    .project-info {
+        padding: 28px 20px;
     }
 
     .project-img-wrapper {
